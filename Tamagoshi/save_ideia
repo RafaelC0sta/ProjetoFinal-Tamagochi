@@ -1,0 +1,9 @@
+with open("input.bin", "rb") as binary_file:
+    data = binary_file.read()
+
+with open("output.bin", "wb") as binary_file2:
+    binary_file2.write(bytes(item - 1 for item in data))
+
+
+
+
